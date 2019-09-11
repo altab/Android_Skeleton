@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab_nav_graph"
+    app:startDestination="@id/homeGraph">
+
+    <navigation
+        android:id="@+id/homeGraph"
+        app:startDestination="@id/homeFragment">
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="fr.pcohen.app.ui.home.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home" />
+    </navigation>
+    <navigation
+        android:id="@+id/aboutGraph"
+        app:startDestination="@id/aboutFragment">
+        <fragment
+            android:id="@+id/aboutFragment"
+            android:name="fr.pcohen.app.ui.about.AboutFragment"
+            android:label="fragment_about"
+            tools:layout="@layout/fragment_about" />
+    </navigation>
+</navigation>

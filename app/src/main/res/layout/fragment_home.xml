@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeFragment">
+    <data>
+        <variable name="isPro" type="boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ib_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="@string/logout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:gravity="end"
+            android:text="@string/version_pro"
+            app:layout_constraintBottom_toBottomOf="@+id/ib_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ib_logout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_credits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="2dp"
+            android:text="@string/chargement_des_credits"
+            android:textAllCaps="false"
+            tools:text="Crédits disponibles : 300"
+            app:layout_constraintEnd_toStartOf="@id/gl_middle"
+            app:layout_constraintTop_toBottomOf="@id/ib_logout"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_pro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="2dp"
+            android:text="@string/passer_en_version_pro"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/gl_middle"
+            app:layout_constraintTop_toTopOf="@id/bt_credits"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <TextView
+            android:id="@+id/tv_credits_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/appuyez_ici_pour_plus_de_credits"
+            android:textColor="@color/colorSecondary"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_credits"
+            app:layout_constraintStart_toStartOf="@+id/bt_credits"
+            app:layout_constraintTop_toBottomOf="@+id/bt_credits" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/commencer_un_rapport"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_credits_hint" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

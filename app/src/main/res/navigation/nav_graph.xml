@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="fr.pcohen.app.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <navigation android:id="@+id/loginGraph"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="fr.pcohen.app.ui.register.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register">
+            <argument
+                android:name="isProfessional"
+                app:argType="boolean" />
+        </fragment>
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="fr.pcohen.app.ui.login.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="fr.pcohen.app.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginGraph"
+            app:destination="@id/loginGraph" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

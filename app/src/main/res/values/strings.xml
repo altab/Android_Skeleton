@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="s_identifier">S\'IDENTIFIER</string>
+    <string name="entrez_email_identifiant_passe">Entrez votre adresse email ou votre identifiant ainsi que votre mot de passe</string>
+    <string name="email">Email</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="mot_de_passe_oublie">Mot de passe oublié ?</string>
+    <string name="s_enregistrer">S\'ENREGISTRER</string>
+    <string name="confirmer_votre_mot_de_passe">Confirmer votre mot de passe</string>
+    <string name="numero_de_telephone">Numéro de téléphone</string>
+    <string name="societe">Société</string>
+    <string name="check_internet">Vérifiez votre connexion internet</string>
+    <string name="fill_all_fields">Veuillez remplir tous les champs</string>
+    <string name="cgu_required">L\'acceptation des CGU est obligatoire</string>
+    <string name="valider_mon_inscription">Valider mon inscription</string>
+    <string name="different_password">Les mots de passe ne correspondent pas</string>
+    <string name="home">Accueil</string>
+    <string name="mon_compte">Mon compte</string>
+    <string name="a_propos">À propos</string>
+    <string name="credits_disponibles_d">Crédits disponibles : %d</string>
+    <string name="passer_en_version_pro">Passer en version PRO</string>
+    <string name="appuyez_ici_pour_plus_de_credits">Appuyez ici pour plus de crédits</string>
+    <string name="commencer_un_rapport">COMMENCER UN RAPPORT</string>
+    <string name="videos">Vidéos</string>
+    <string name="photos">Photos</string>
+    <string name="mes_archives">Mes archives</string>
+    <string name="version_pro">Version\nPro</string>
+    <string name="chargement_des_credits">Chargement des crédits…</string>
+    <string name="not_activated">Compte non activé</string>
+    <string name="wrong_credentials">Utilisateur ou mot de passe incorrect</string>
+    <string name="register">Inscription</string>
+    <string name="partager_l_application">Partager l\'application</string>
+    <string name="version_s">Version %s</string>
+    <string name="logout">Déconnexion</string>
+
+</resources>
